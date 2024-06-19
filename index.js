@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 app.post('/fetch_data', function (req, res) {
     const cityName = req.body.city
     console.log(cityName)
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=0d5e5584f10c9b47cf5bc418e78c795e&units=metric"
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "APIkey"
     axios.get(url)
         .then(function (response) {
             //handle succes
